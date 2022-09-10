@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>巴士专区</title>
+    <link rel="shortcut icon" href="./is/favicon.ico">
+    <link href="../CSS/me.css" rel="stylesheet" type="text/css">
+    <style>
+                #fh{color: aqua;text-align: left;text-decoration: none;background-image: url("is/bus侧面.png");background-size:cover}
+        #fhd{width: 70px;}
+        #fhd:hover{font-size: 25px;width:110px;color: #e4393c}
+        #fh:hover{color: #e4393c;background-size: 110px 65px}
+                body{
+		background: url("./is/busbg.jpg") no-repeat center center fixed;
+                /*兼容浏览器版本*/
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        }
+                .indent{text-indent: 2em;line-height: 1.5}
+                        .web{text-decoration: none;color: blue}
+        .web:hover{font-size: 30px;color: yellow}
+        .isb:hover{height: 350px}
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+        window.onload = function () {
+       var Lis = document.getElementsByTagName("li");
+            for (i = 0; i < Lis.length; i++) {
+                Lis[i].i = i;
+
+               //设置鼠标移入时的样式。
+                Lis[i].onmouseover = function () {
+                    this.className = "lihover";
+					var h0=(this.i-1)*30+35;
+					var y=this.getElementsByTagName("div")[0].offsetHeight;
+					var h=this.getElementsByTagName("div")[0].style.top+y;
+					if(h<h0){
+						this.getElementsByTagName("div")[0].style.top=h0+"px";
+						}
+                }
+                  //设置鼠标移开时的样式为空。
+                Lis[i].onmouseout = function () {
+                    this.className = "";
+                }
+
+            }
+        }
+    </script>
+    <div style="position: fixed;margin: 0 auto;width: 128px;height: 128px;bottom: 0px;top: 100px;background-attachment: fixed;width: 50px;height: 50px;">
+
+        <ul class="main">
+        <li><a><img style="width: 50px;margin: 0 auto" src="is/lyfgif.gif"></a><span></span>
+		<!--右拉菜单开始-->
+            <div class="submenu">
+		<a href="#">置顶🔝</a>
+		<ul class="zy">
+            <a href="index.html" class="m2">主页🏠></a>
+            <div class="su">
+                                <ul class="gd">
+                   <a>更多功能</a>
+                       <div class="suu">
+                           <a href="gycz.html">关于此站</a>
+                           <a href="gg.html">广告页</a>
+                       </div>
+                </li></ul>
+		<a href="tjwz.html">网站推荐</a>
+                <a href="bszq.html">巴士专区</a>
+                </div></li></ul>
+             </div>
+
+			<!--右拉菜单结束-->
+        </li>
+        </ul>
+    </div>
+    <div id="fhd"><a style="text-decoration: none;" href="index.html"><h1 id="fh"><--</h1></a></div>
+    <h1 style="text-align:center">巴士专区</h1>
+<div class="bg" style="background-color: rgb(93,247,255,0.7)">
+    <h1>1.Proton Bus</h1>
+    <img id="pdmn" src="is/pb1.jpg" style="width: 370px"><h1>介绍:</h1>
+    <script>
+        var i = 0;
+        setInterval(function () {
+            i++;
+            if(i>5){i=1;}
+            document.getElementById('pdmn').src = "is/pb"+i+".jpg";
+        },2000)
+    </script>
+    <p class="indent">Proton Bus是一款正在开发的巴西巴士模拟器，自2017年以来可用于Android和PC。这不仅仅是一个游戏，它已经成为一个平台：由于mods的支持，任何人都可以创建公共汽车和地图在其中运行！社区做了惊人的事情！</p>
+    <h1>官方网站:</h1>
+    <p><a class="web" href="http://www.protonbus.com.br/">protonbus.com.br</a></p>
+    <p class="indent">由于网站服务器在国外,第一次加载可能会十分慢，所以请自备加速器或耐心等待。</p>
+    <p class="indent">界面不是中文，看不懂？不会下载？使用我翻译的中文下载界面👉🏻</p><a href="pbd.html" class="web">中文下载界面</a>
+    <h1>模组官网:</h1>
+    <a class="web" href="https://busmods.com">busmods.com</a>
+    <p class="indent">大量mod可供下载，使游戏更加精彩！</p>
+    <h1>游戏厂商:</h1>
+    <a class="web" href="http://viamep.com">viamep.com</a>
+    <p class="indent">关于游戏厂商</p>
+    <h1>Proton Bus交流Q群:</h1><span style="color: blue;font-size: 25px">579606450</span>
+</div>
+</body>
+</html>
