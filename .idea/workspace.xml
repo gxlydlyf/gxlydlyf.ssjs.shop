@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;">
+    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="1">
+      <change afterPath="$PROJECT_DIR$/is/lyfw.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gycz.html" beforeDir="false" afterPath="$PROJECT_DIR$/gycz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tjwz.html" beforeDir="false" afterPath="$PROJECT_DIR$/tjwz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1662724617373" duration="1622000" />
       <workItem from="1662862423389" duration="3255000" />
       <workItem from="1662874090866" duration="437000" />
-      <workItem from="1662874601182" duration="2372000" />
+      <workItem from="1662874601182" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662863740485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1662883332808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662883332808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,8 +147,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="n'n'nxideiy" />
-    <MESSAGE value="1" />
     <MESSAGE value="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
