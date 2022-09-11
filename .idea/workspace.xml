@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gg.html" beforeDir="false" afterPath="$PROJECT_DIR$/gg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gycz.html" beforeDir="false" afterPath="$PROJECT_DIR$/gycz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tjwz.html" beforeDir="false" afterPath="$PROJECT_DIR$/tjwz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,15 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="63276593-c95e-4d23-92c2-adf03649c4b7" />
+        <option name="url" value="git@github.com:gxlydlyf/gxlydlyf.ssjs.shop.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +105,7 @@
       <workItem from="1662724617373" duration="1622000" />
       <workItem from="1662862423389" duration="3255000" />
       <workItem from="1662874090866" duration="437000" />
-      <workItem from="1662874601182" duration="313000" />
+      <workItem from="1662874601182" duration="2372000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
