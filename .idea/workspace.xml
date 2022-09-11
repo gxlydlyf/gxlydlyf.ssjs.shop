@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="" />
+    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gg.html" beforeDir="false" afterPath="$PROJECT_DIR$/gg.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,9 +45,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../phpwind2011" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -53,12 +60,22 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.gherkin.gui.PyBDDProjectConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\x1k1l\OneDrive\桌面\网站\html" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="gg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html/gg.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript 调试.gg.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +95,9 @@
       <workItem from="1662304637141" duration="714000" />
       <workItem from="1662720469818" duration="3177000" />
       <workItem from="1662724617373" duration="1622000" />
-      <workItem from="1662862423389" duration="2544000" />
+      <workItem from="1662862423389" duration="3255000" />
+      <workItem from="1662874090866" duration="437000" />
+      <workItem from="1662874601182" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -115,6 +134,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="n'n'nxideiy" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Signed-off-by: gxlydlyf &lt;x1k1l1@163.com&gt;" />
   </component>
 </project>
