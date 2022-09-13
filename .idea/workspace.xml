@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
-      <change afterPath="$PROJECT_DIR$/is/ljsb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/is/zcsb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/me.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,12 +73,16 @@
       <recent name="C:\Users\x1k1l\OneDrive\桌面\网站\html" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript 调试.index.html">
     <configuration name="gg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html/gg.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript 调试.index.html" />
         <item itemvalue="JavaScript 调试.gg.html" />
       </list>
     </recent_temporary>
@@ -107,7 +108,8 @@
       <workItem from="1662862423389" duration="3255000" />
       <workItem from="1662874090866" duration="437000" />
       <workItem from="1662874601182" duration="5386000" />
-      <workItem from="1662954579334" duration="2227000" />
+      <workItem from="1662954579334" duration="3625000" />
+      <workItem from="1663081804213" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662954921924</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="在pycharm上的更新">
+      <created>1662974611221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662974611221</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
