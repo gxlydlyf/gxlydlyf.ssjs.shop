@@ -82,8 +82,28 @@
 <div class="gdwz">
     <a href="bszq.html"><img style="width: 328px;height: 110px;" src="is/bus侧面.png"><h1 id="bszq">巴士专区</h1></a>
 </div>
+<script>
+function show(){
+    var show_part = document.querySelector('.dropbox');
+    show_part.style.display = 'block';
+    var show_part = document.querySelector('.dropbtt');
+    show_part.style.display = 'block';
+    var show_part = document.querySelector('.dropbt');
+    show_part.style.display = 'none';
+    }
+function hide(){
+    var show_part = document.querySelector('.dropbox');
+    show_part.style.display = 'none';
+    var show_part = document.querySelector('.dropbtt');
+    show_part.style.display = 'none';
+    var show_part = document.querySelector('.dropbt');
+    show_part.style.display = 'block';
+    }
+
+</script>
 <div class="drop" style="position: fixed;top: 13px;left: 0px;z-index: 81">
-    <button class="dropbt"><img style="width: 50px;height: 30px;" src="is/三杠.png"></button>
+    <button class="dropbt" onClick="show()"><img style="width: 50px;height: 30px;" src="is/三杠.png"></button>
+    <button class="dropbtt" onClick="hide()" style="display:none;"><img style="width: 30px;height: 30px;" src="is/叉.png"></button>
     <div class="dropbox">
         <a href="gycz.html">关于此站</a>
         <a style="text-align: right">     <--工具粉,点他!</a>
