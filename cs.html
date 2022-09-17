@@ -1,17 +1,25 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
 </head>
-<script type="text/javascript">
-
-$(function(){
-	$("#sp").trigger("click");
-
-});
-</script>
+        <!--这个函数写在需要点击的div中  此处默认可点击范围为整个body-->
 <body>
-	<a href="https://www.baidu.com"><span id="sp">自动点击</span></a>
+<script type="text/javascript">
+window.onload=function(){
+    document.onmousedown=function(ev){
+        var oEvent=ev||event;
+        var oDiv=document.createElement('div');
+        oDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        oDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        oDiv.style.border='1px solid #E2E2E2'; // 设置边框
+        oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        oDiv.style.width='20px'; // 指定宽度
+        oDiv.style.height='20px'; // 指定高度
+		oDiv.style.borderRadius = '50%';
+		oDiv.style.background = '#E2E2E2';
+        document.body.appendChild(oDiv);
+    }
+}
+</script>
 </body>
 </html>
