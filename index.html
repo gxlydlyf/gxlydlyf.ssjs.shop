@@ -101,14 +101,18 @@ function hide(){
     }
 
 </script>
-<div class="drop" style="position: fixed;top: 13px;left: 0px;z-index: 81">
-    <button class="dropbt" onClick="show()"><img style="width: 50px;height: 30px;" src="is/三杠.png"></button>
-    <button class="dropbtt" onClick="hide()" style="display:none;"><img style="width: 30px;height: 30px;" src="is/叉.png"></button>
-    <div class="dropbox">
+
+<div id="volet_clos">
+    <div id="volet"><div class="dropbox">
         <a href="gycz.html">关于此站</a>
         <a style="text-align: right">     <--工具粉,点他!</a>
         <a href="gg.html">广告页</a>
     </div>
+
+        <a href="#volet"  aria-hidden="true" class="ouvrir"><img style="width: 30px;height: 30px;" src="is/叉.png"></a>
+        <a href="#volet_clos" aria-hidden="true" class="fermer"><img style="width: 50px;height: 30px;" src="is/三杠.png"></a>
+    </div>
 </div>
+</body
 </body>
 </html>
