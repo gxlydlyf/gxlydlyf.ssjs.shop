@@ -18,6 +18,8 @@
                 #bszq:hover{color: deepskyblue}
         .gdwz:hover #bszq{color:  deepskyblue}
     </style>
+
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6205462395038347"
      crossorigin="anonymous"></script>
 </head>
@@ -82,37 +84,23 @@
 <div class="gdwz">
     <a href="bszq.html"><img style="width: 328px;height: 110px;" src="is/bus侧面.png"><h1 id="bszq">巴士专区</h1></a>
 </div>
-<script>
-function show(){
-    var show_part = document.querySelector('.dropbox');
-    show_part.style.display = 'block';
-    var show_part = document.querySelector('.dropbtt');
-    show_part.style.display = 'block';
-    var show_part = document.querySelector('.dropbt');
-    show_part.style.display = 'none';
-    }
-function hide(){
-    var show_part = document.querySelector('.dropbox');
-    show_part.style.display = 'none';
-    var show_part = document.querySelector('.dropbtt');
-    show_part.style.display = 'none';
-    var show_part = document.querySelector('.dropbt');
-    show_part.style.display = 'block';
-    }
-
-</script>
-
 <div id="volet_clos">
     <div id="volet"><div class="dropbox">
         <a href="gycz.html">关于此站</a>
         <a style="text-align: right">     <--工具粉,点他!</a>
         <a href="gg.html">广告页</a>
     </div>
+<script type="text/javascript">
 
-        <a href="#volet"  aria-hidden="true" class="ouvrir"><img style="width: 30px;height: 30px;" src="is/叉.png"></a>
+$(function(){
+	$("#sp").trigger("click");
+
+});
+</script>
+        <a href="#volet"  aria-hidden="true" class="ouvrir" id="link"><img style="width: 30px;height: 30px;" src="is/叉.png" id="sp"></a>
         <a href="#volet_clos" aria-hidden="true" class="fermer"><img style="width: 50px;height: 30px;" src="is/三杠.png"></a>
     </div>
 </div>
-</body
+
 </body>
 </html>

@@ -1,37 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="author" content="http://www.softwhy.com/" />
-<title>xxxx</title>
- <style>
-        #volet_clos {position: fixed;top: 0px; left: 0;width: 100%;}
-        #volet {width: 250px;padding: 10px;background: #6B9A49; color: #fff;width: 100%;}
-        /* 初始定位 */
-        #volet {position: absolute;left: 0px;top: 375px;transition: all .5s ease-in;}
-        #volet a.ouvrir,#volet a.fermer {position: absolute;right: -88px;top: 150px;}
-        /* 点击过后改变 target  */
-        #volet a.fermer {display: none;}
-        #volet:target {left: 0px;top: 150px;}
-        #volet:target a.fermer {display: block;}
-        #volet:target a.ouvrir {display: none;}
-        #volet_clos:target #volet {left: 0px;top: 910px;}
-        #volet a.ouvrir,#volet a.fermer{position: absolute;right: calc(40%);top: -40px;padding: 10px 25px; background: #555; color: #fff; text-decoration: none;text-align: center; width: 120px;}
-    </style>
+	<meta charset="utf-8">
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
 </head>
-<body>
-<h2>CSS3滑入/滑出效果</h2>
-<div id="volet_clos">
-    <div id="volet">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quisquam tempora quaerat dolores molestias reiciendis .</p>
-        <p>vero labore voluptates necessitatibus ut? Et</p>
-        <p>vero labore voluptates necessitatibus ut? Et</p>
-        <p>vero labore voluptates necessitatibus ut? Et</p>
-        <p>vero labore voluptates necessitatibus ut? Et</p>
+<script type="text/javascript">
 
-        <a href="#volet"  aria-hidden="true" class="ouvrir">滑入</a>
-        <a href="#volet_clos" aria-hidden="true" class="fermer">滑出</a>
-    </div>
-</div>
+$(function(){
+	$("#sp").trigger("click");
+
+});
+</script>
+<body>
+	<a href="https://www.baidu.com"><span id="sp">自动点击</span></a>
 </body>
 </html>
