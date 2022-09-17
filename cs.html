@@ -3,23 +3,65 @@
 	<meta charset="utf-8">
 </head>
         <!--这个函数写在需要点击的div中  此处默认可点击范围为整个body-->
-<body>
+<body style="background-color: red">
 <script type="text/javascript">
 window.onload=function(){
     document.onmousedown=function(ev){
         var oEvent=ev||event;
+
+		var ooDiv=document.createElement('div');
+        ooDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        ooDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        ooDiv.style.border='1px solid white'; // 设置边框
+        ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        ooDiv.style.width='1px'; // 指定宽度
+        ooDiv.style.height='1px'; // 指定高度
+		ooDiv.style.opacity = '0.9'
+		ooDiv.style.borderRadius = '50%';
+		ooDiv.style.background = 'white';
+        document.body.appendChild(ooDiv);
+
         var oDiv=document.createElement('div');
         oDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
         oDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        oDiv.style.border='1px solid #E2E2E2'; // 设置边框
+        oDiv.style.border='1px solid #F6F6EE'; // 设置边框
         oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
         oDiv.style.width='20px'; // 指定宽度
         oDiv.style.height='20px'; // 指定高度
+		oDiv.style.opacity = '0.4'
 		oDiv.style.borderRadius = '50%';
-		oDiv.style.background = '#E2E2E2';
+		oDiv.style.background = '#F6F6EE';
         document.body.appendChild(oDiv);
-    }
-}
+
+		var div2width = 5;
+		var div2height = 5;
+		var divwidth = 20;
+		var divheight = 20;
+		var divtop = oDiv.style.top;
+		var divleft = oDiv.style.left;
+		var div2top = ooDiv.style.top;
+		var div2left = ooDiv.style.left;
+		setInterval(function (){
+		if (divwidth < 100) {
+			divwidth += 1;
+			divheight += 1;
+			div2width += 0.1;
+			div2height += 0.1;
+			divtop = oEvent.clientY - divwidth/2;
+			divleft = oEvent.clientX - divwidth/2;
+			div2top = oEvent.clientY - div2width/2;
+			div2left = oEvent.clientX - div2width/2;
+
+			oDiv.style.left = divleft;
+			oDiv.style.top = divtop;
+			oDiv.style.width = divwidth + "px";
+			oDiv.style.height = divheight + "px";
+
+			ooDiv.style.left = div2left;
+			ooDiv.style.top = div2top;
+			ooDiv.style.width = div2width + "px";
+			ooDiv.style.height = div2height + "px";}else {oDiv.style.display = 'none';ooDiv.style.display = 'none'}})
+	}}
 </script>
 </body>
 </html>

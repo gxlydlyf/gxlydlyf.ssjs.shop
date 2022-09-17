@@ -30,5 +30,5 @@ background-color: #cacac5;
         #volet a.fermer {display: none;}
         #volet:target a.fermer {display: block;}
         #volet:target a.ouvrir {display: none;}
-        #volet_clos:target #volet {left: 190px}
+        #volet_clos:target #volet{left: 190px}
         #volet a.ouvrir,#volet a.fermer{position: absolute;left: calc(200px);top: -40px;padding: 10px 25px; background: none; color: #fff; text-decoration: none;text-align: center; width: 10px;}
