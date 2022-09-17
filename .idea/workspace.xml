@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
-      <change beforePath="$PROJECT_DIR$/CSS/sg.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/sg.css" afterDir="false" />
-    </list>
+    <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1662874601182" duration="5386000" />
       <workItem from="1662954579334" duration="3625000" />
       <workItem from="1663081804213" duration="3133000" />
-      <workItem from="1663331379373" duration="11084000" />
+      <workItem from="1663331379373" duration="11388000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663379398726</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="在pycharm上的更新">
+      <created>1663379605339</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663379605339</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
