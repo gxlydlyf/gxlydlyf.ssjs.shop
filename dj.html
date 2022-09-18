@@ -1,6 +1,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 </head>
         <!--这个函数写在需要点击的div中  此处默认可点击范围为整个body-->
 <body style="background-color: red">
@@ -14,39 +16,41 @@ window.onload=function(){
         ooDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
         ooDiv.style.border='1px solid white'; // 设置边框
         ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
-        ooDiv.style.width='1px'; // 指定宽度
-        ooDiv.style.height='1px'; // 指定高度
-		ooDiv.style.opacity = '0.9'
+        ooDiv.style.width='2px'; // 指定宽度
+        ooDiv.style.height='2px'; // 指定高度
+		ooDiv.style.opacity = '1'
 		ooDiv.style.borderRadius = '50%';
 		ooDiv.style.background = 'white';
+		ooDiv.style.zIndex = '1001';
         document.body.appendChild(ooDiv);
 
         var oDiv=document.createElement('div');
         oDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
         oDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        oDiv.style.border='1px solid #F6F6EE'; // 设置边框
+        oDiv.style.border='1px solid #A1A19C'; // 设置边框
         oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
         oDiv.style.width='20px'; // 指定宽度
         oDiv.style.height='20px'; // 指定高度
-		oDiv.style.opacity = '0.4'
+		oDiv.style.opacity = '0.3'
 		oDiv.style.borderRadius = '50%';
-		oDiv.style.background = '#F6F6EE';
+		oDiv.style.background = '#A1A19C';
+		ooDiv.style.zIndex = '1000';
         document.body.appendChild(oDiv);
 
-		var div2width = 5;
-		var div2height = 5;
-		var divwidth = 20;
-		var divheight = 20;
+		var div2width = 50;
+		var div2height = 50;
+		var divwidth = 100;
+		var divheight = 100;
 		var divtop = oDiv.style.top;
 		var divleft = oDiv.style.left;
 		var div2top = ooDiv.style.top;
 		var div2left = ooDiv.style.left;
 		setInterval(function (){
-		if (divwidth < 100) {
+		if (divwidth < 200) {
 			divwidth += 1;
 			divheight += 1;
-			div2width += 0.1;
-			div2height += 0.1;
+			div2width -= 0.3;
+			div2height -= 0.3;
 			divtop = oEvent.clientY - divwidth/2;
 			divleft = oEvent.clientX - divwidth/2;
 			div2top = oEvent.clientY - div2width/2;

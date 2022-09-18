@@ -2,6 +2,7 @@ body
         {
             margin:0;
 	    padding: 0;
+    cursor: url(./is/zcsb.png), default;
         }
         .main
         {
@@ -77,15 +78,9 @@ body
             -moz-box-shadow: 0 0 8px #DDD;
             -webkit-box-shadow: 0 0 8px #DDD;
         }
-        body{
-
-cursor: url(./is/zcsb.png), default;
-
-}
-
 /** 链接指针样式**/
 
-a:hover{cursor:url(./is/ljsb.png), pointer;}}
+    a:hover{cursor:url(./is/ljsb.png), pointer;}}
                 .su a
         {
             display: block;

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
-      <change afterPath="$PROJECT_DIR$/cs2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/sg.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/sg.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs.html" beforeDir="false" afterPath="$PROJECT_DIR$/cs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dj.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cs2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +116,7 @@
       <workItem from="1663081804213" duration="3133000" />
       <workItem from="1663331379373" duration="12518000" />
       <workItem from="1663381136770" duration="17010000" />
+      <workItem from="1663427275018" duration="4279000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
