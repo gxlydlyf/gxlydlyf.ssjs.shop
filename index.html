@@ -9,16 +9,18 @@
     <link rel="shortcut icon" href="./is/favicon.ico">
     <link href="./CSS/sg.css" rel="stylesheet" type="text/css">
     <style>
-        .gdwz{height: 69px;position:relative;margin: 0 auto;width: 328px}
+        .gdwz{position:relative;margin: 0 auto;background: url("is/更多网站.png") no-repeat;height: 80px;width: 300px;background-size: 300px 80px}
+        .gdwz2{height: 120px;position:relative;margin: 0 auto;width: 328px}
 
-        .wztj{position:absolute;top: -12px;left: 110px;color: black}
+        .wztj{position:absolute;top: 0px;left: 75px;color: black;}
         .wztj:hover{color: yellow;}
         .gdwz:hover .wztj{color: yellow}
                 #bszq{position:absolute;top: -12px;left: 110px;color:#e4393c}
                 #bszq:hover{color: deepskyblue}
-        .gdwz:hover #bszq{color:  deepskyblue}
-    </style>
+        .gdwz2:hover #bszq{color:  deepskyblue}
+        .sygn{margin: auto;height: 113px;width: 432px;}
 
+    </style>
 	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6205462395038347"
      crossorigin="anonymous"></script>
@@ -26,13 +28,18 @@
 <body>
 
 <div style="position: absolute;width: 100%;height: 100%;top: 0px;left: 0px;background-color: rgb(255,245,215,0.4);color: #fff5d7">%</div>
+
 <div class="blk" style="color: white;text-align: center;font-weight: bold;font-size: 45px;line-height: 60px">烈焰粉</div>
 <div style="opacity: 0"><p>%</p><p>%</p><p>%</p><p>%</p></div>
+<div class="sygn">
+    <a href="sygn.html"><img style="height: 113px;position: absolute;left: 160px;" src="is/sygn1.png" onmouseover="this.src='is/sygn2.png'"
+    onmouseout ="this.src='is/sygn1.png'">
+    </a></div>
 <div class="gdwz">
-    <a href="tjwz.html"><img src="is/更多网站.png"><h1 class="wztj">网站推荐</h1></a>
+    <a href="tjwz.html"><h1 class="wztj">网站推荐</h1></a>
 </div>
 <p></p>
-<div class="gdwz">
+<div class="gdwz2">
     <a href="bszq.html"><img style="width: 328px;height: 110px;" src="is/bus侧面.png"><h1 id="bszq">巴士专区</h1></a>
 </div>
 <script>
@@ -63,57 +70,5 @@ $(function(){
         <a href="#volet_clos" aria-hidden="true" class="fermer" onclick="hide()" id="divid"><img style="width: 50px;height: 30px;" src="is/三杠.png"></a>
     </div>
 </div>
-
-<script type="text/javascript">
-        window.onload = function () {
-       var Lis = document.getElementsByTagName("li");
-            for (i = 0; i < Lis.length; i++) {
-                Lis[i].i = i;
-
-               //设置鼠标移入时的样式。
-                Lis[i].onmouseover = function () {
-                    this.className = "lihover";
-					var h0=(this.i-1)*30+35;
-					var y=this.getElementsByTagName("div")[0].offsetHeight;
-					var h=this.getElementsByTagName("div")[0].style.top+y;
-					if(h<h0){
-						this.getElementsByTagName("div")[0].style.top=h0+"px";
-						}
-                }
-                  //设置鼠标移开时的样式为空。
-                Lis[i].onmouseout = function () {
-                    this.className = "";
-                }
-
-            }
-        }
-    </script>
-    <div style="position: fixed;margin: 0 auto;width: 128px;height: 128px;bottom: 0px;top: 100px;fixed;width: 50px;height: 50px;z-index: 9999">
-
-        <ul class="main">
-        <li><a><img style="width: 50px;margin: 0 auto" src="is/lyfgif.gif"></a><span></span>
-		<!--右拉菜单开始-->
-            <div class="submenu">
-		<a href="#">置顶🔝</a>
-		<ul class="zy">
-            <a href="index.html" class="m2">主页🏠></a>
-            <div class="su">
-                <ul class="gd">
-                   <a>更多功能</a>
-                       <div class="suu">
-                           <a href="gycz.html">关于此站</a>
-                           <a href="gg.html">广告页</a>
-                       </div>
-                </li></ul>
-		<a href="tjwz.html">网站推荐</a>
-                <a href="bszq.html">巴士专区</a>
-                </div></li></ul>
-             </div>
-
-			<!--右拉菜单结束-->
-        </li>
-        </ul>
-    </div>
-
 </body>
 </html>

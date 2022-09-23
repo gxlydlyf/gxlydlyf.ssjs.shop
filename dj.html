@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -37,14 +38,15 @@ window.onload=function(){
 		ooDiv.style.zIndex = '1000';
         document.body.appendChild(oDiv);
 
+
 		var div2width = 50;
 		var div2height = 50;
 		var divwidth = 100;
 		var divheight = 100;
-		var divtop = oDiv.style.top;
-		var divleft = oDiv.style.left;
-		var div2top = ooDiv.style.top;
-		var div2left = ooDiv.style.left;
+		var divtop = oEvent.clientY;
+		var divleft = oEvent.clientX;
+		var div2top = oEvent.clientY;
+		var div2left = oEvent.clientX;
 		setInterval(function (){
 		if (divwidth < 200) {
 			divwidth += 1;
@@ -56,15 +58,15 @@ window.onload=function(){
 			div2top = oEvent.clientY - div2width/2;
 			div2left = oEvent.clientX - div2width/2;
 
-			oDiv.style.left = divleft;
-			oDiv.style.top = divtop;
+			oDiv.style.left = divleft + "px";
+			oDiv.style.top = divtop + "px";
 			oDiv.style.width = divwidth + "px";
 			oDiv.style.height = divheight + "px";
 
-			ooDiv.style.left = div2left;
-			ooDiv.style.top = div2top;
+			ooDiv.style.left = div2left + "px";
+			ooDiv.style.top = div2top + "px";
 			ooDiv.style.width = div2width + "px";
-			ooDiv.style.height = div2height + "px";}else {oDiv.style.display = 'none';ooDiv.style.display = 'none'}})
+			ooDiv.style.height = div2height + "px";}else {oDiv.remove();ooDiv.remove()}})
 	}}
 </script>
 </body>

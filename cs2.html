@@ -1,72 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            border-radius: 50%;
+            animation:move 2s linear infinite ;
+        }
+        @keyframes move {
+            0%{
+                /* 点击后执行动画 从小0--->200 */
+                width: 0;
+                height: 0;
+                /* 透明度  逐渐同名 */
+                opacity: 1;
+                /* 内部阴影变大 */
+                box-shadow: 0 0 10px inset red;
+                /* div 进行颜色的变化 */
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+                opacity: 0.1;
+                box-shadow: 0 0 60px inset red;
+            }
+        }
+    </style>
 </head>
-        <!--这个函数写在需要点击的div中  此处默认可点击范围为整个body-->
-<body style="background-color: red">
-<script type="text/javascript">
-window.onload=function(){
-    document.onmousedown=function(ev){
-        var oEvent=ev||event;
+<body>
 
-		var ooDiv=document.createElement('div');
-        ooDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
-        ooDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        ooDiv.style.border='1px solid white'; // 设置边框
-        ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
-        ooDiv.style.width='2px'; // 指定宽度
-        ooDiv.style.height='2px'; // 指定高度
-		ooDiv.style.opacity = '1'
-		ooDiv.style.borderRadius = '50%';
-		ooDiv.style.background = 'white';
-		ooDiv.style.zIndex = '1001';
-        document.body.appendChild(ooDiv);
+    <script>
+        var docu=document.documentElement;
+var mes=document.querySelector("body");
+docu.onclick=function(event){
+    //获得鼠标点击的位置
+    //点击的水平方向
+    var X=event.clientX
+    //点击的垂直方向
+    var Y=event.clientY
 
-        var oDiv=document.createElement('div');
-        oDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
-        oDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        oDiv.style.border='1px solid #A1A19C'; // 设置边框
-        oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
-        oDiv.style.width='20px'; // 指定宽度
-        oDiv.style.height='20px'; // 指定高度
-		oDiv.style.opacity = '0.3'
-		oDiv.style.borderRadius = '50%';
-		oDiv.style.background = '#A1A19C';
-		ooDiv.style.zIndex = '1000';
-        document.body.appendChild(oDiv);
+    console.log(X,Y);
+    //创建一个元素div
+    var pao=document.createElement("div")
+    //设置div 位置就是鼠标点击的位置
+    pao.style.top=Y+"px"
+    pao.style.left=X+"px"
+    //把div 添加到页面上body
+    mes.appendChild(pao)
+    //动画执行完后 就删除
+    setTimeout(()=>{
+        mes.removeChild(pao)
+    },2000)
+}
 
-		var div2width = 50;
-		var div2height = 50;
-		var divwidth = 100;
-		var divheight = 100;
-		var divtop = oDiv.style.top;
-		var divleft = oDiv.style.left;
-		var div2top = ooDiv.style.top;
-		var div2left = ooDiv.style.left;
-		setInterval(function (){
-		if (divwidth < 200) {
-			divwidth += 1;
-			divheight += 1;
-			div2width -= 0.3;
-			div2height -= 0.3;
-			divtop = oEvent.clientY - divwidth/2;
-			divleft = oEvent.clientX - divwidth/2;
-			div2top = oEvent.clientY - div2width/2;
-			div2left = oEvent.clientX - div2width/2;
-
-			oDiv.style.left = divleft;
-			oDiv.style.top = divtop;
-			oDiv.style.width = divwidth + "px";
-			oDiv.style.height = divheight + "px";
-
-			ooDiv.style.left = div2left;
-			ooDiv.style.top = div2top;
-			ooDiv.style.width = div2width + "px";
-			ooDiv.style.height = div2height + "px";}else {oDiv.style.display = 'none';ooDiv.style.display = 'none'}})
-	}}
-</script>
+    </script>
 </body>
 </html>
