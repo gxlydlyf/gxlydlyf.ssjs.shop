@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
-      <change afterPath="$PROJECT_DIR$/cmd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/is/sygn1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/is/sygn2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sygn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cs2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dj.html" beforeDir="false" afterPath="$PROJECT_DIR$/dj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/is/演示.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/is/更多网站.png" beforeDir="false" afterPath="$PROJECT_DIR$/is/更多网站.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sygn.html" beforeDir="false" afterPath="$PROJECT_DIR$/sygn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +116,7 @@
       <workItem from="1663427275018" duration="13694000" />
       <workItem from="1663585398512" duration="7349000" />
       <workItem from="1663667977513" duration="9011000" />
-      <workItem from="1663938753923" duration="966000" />
+      <workItem from="1663938753923" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -257,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663476076673</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="在pycharm上的更新">
+      <created>1663947919469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663947919469</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
