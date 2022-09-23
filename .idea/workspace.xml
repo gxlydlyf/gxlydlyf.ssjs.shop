@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
-      <change afterPath="$PROJECT_DIR$/is/演示.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sygn.html" beforeDir="false" afterPath="$PROJECT_DIR$/sygn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +114,7 @@
       <workItem from="1663427275018" duration="13694000" />
       <workItem from="1663585398512" duration="7349000" />
       <workItem from="1663667977513" duration="9011000" />
-      <workItem from="1663938753923" duration="1310000" />
+      <workItem from="1663938753923" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663947919469</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="在pycharm上的更新">
+      <created>1663948232535</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663948232535</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
