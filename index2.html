@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6205462395038347"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <meta name="msvalidate.01" content="B31473CD2611B3495581026D19295214" />
+    <meta charset="UTF-8">
+<script type="text/javascript">
+
+window.onload=function(){
+
+    document.onmousedown=function(ev){
+        var oEvent=ev||event;
+
+		var ooDiv=document.createElement('div');
+        ooDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        ooDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        ooDiv.style.border='1px solid white'; // 设置边框
+        ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        ooDiv.style.width='2px'; // 指定宽度
+        ooDiv.style.height='2px'; // 指定高度
+		ooDiv.style.opacity = '1'
+		ooDiv.style.borderRadius = '50%';
+		ooDiv.style.background = 'white';
+		ooDiv.style.zIndex = '1001';
+        document.body.appendChild(ooDiv);
+
+        var oDiv=document.createElement('div');
+        oDiv.style.left=oEvent.clientX+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        oDiv.style.top=oEvent.clientY+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        oDiv.style.border='1px solid #A1A19C'; // 设置边框
+        oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        oDiv.style.width='20px'; // 指定宽度
+        oDiv.style.height='20px'; // 指定高度
+		oDiv.style.opacity = '0.3'
+		oDiv.style.borderRadius = '50%';
+		oDiv.style.background = '#A1A19C';
+		ooDiv.style.zIndex = '1000';
+        document.body.appendChild(oDiv);
+
+
+		var div2width = 50;
+		var div2height = 50;
+		var divwidth = 100;
+		var divheight = 100;
+		var divtop = oEvent.clientY;
+		var divleft = oEvent.clientX;
+		var div2top = oEvent.clientY;
+		var div2left = oEvent.clientX;
+		setInterval(function (){
+		if (divwidth < 200) {
+			divwidth += 1;
+			divheight += 1;
+			div2width -= 0.3;
+			div2height -= 0.3;
+			divtop = oEvent.clientY - divwidth/2;
+			divleft = oEvent.clientX - divwidth/2;
+			div2top = oEvent.clientY - div2width/2;
+			div2left = oEvent.clientX - div2width/2;
+
+			oDiv.style.left = divleft + "px";
+			oDiv.style.top = divtop + "px";
+			oDiv.style.width = divwidth + "px";
+			oDiv.style.height = divheight + "px";
+
+			ooDiv.style.left = div2left + "px";
+			ooDiv.style.top = div2top + "px";
+			ooDiv.style.width = div2width + "px";
+			ooDiv.style.height = div2height + "px";}else {oDiv.remove();ooDiv.remove()}})
+	}}
+</script>
+<div style="position: absolute;width: 100%;height: 100%;top: 0px;left: 0px;background-color: rgb(255,245,215,0.4);color: #fff5d7">%</div>
+    <link href="CSS/me.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>烈焰粉</title>
+    <link rel="shortcut icon" href="is/favicon.ico">
+    <link href="CSS/sg.css" rel="stylesheet" type="text/css">
+    <style>
+        .gdwz{height: 69px;position:relative;margin: 0 auto;width: 328px}
+
+        .wztj{position:absolute;top: -12px;left: 110px;color: black}
+        .wztj:hover{color: yellow;}
+        .gdwz:hover .wztj{color: yellow}
+                #bszq{position:absolute;top: -12px;left: 110px;color:#e4393c}
+                #bszq:hover{color: deepskyblue}
+        .gdwz:hover #bszq{color:  deepskyblue}
+    </style>
+
+
+<div class="blk" style="color: white;text-align: center;font-weight: bold;font-size: 45px;line-height: 60px">烈焰粉</div>
+<div style="opacity: 0"><p>%</p><p>%</p><p>%</p><p>%</p></div>
+<div class="gdwz">
+    <a href="tjwz.html"><img src="is/更多网站.png"><h1 class="wztj">网站推荐</h1></a>
+</div>
+<p></p>
+<div class="gdwz">
+    <a href="bszq.html"><img style="width: 328px;height: 110px;" src="is/bus侧面.png"><h1 id="bszq">巴士专区</h1></a>
+</div>
+<script>
+    function show(){
+        var showw = document.querySelector('.blk');
+        showw.style.color = 'white';
+    }
+    function hide(){
+        var hidee = document.querySelector('.blk');
+        hidee.style.color = 'black';
+    }
+</script>
+<div id="volet_clos">
+    <div id="volet"><div class="dropbox">
+        <a href="gycz.html">关于此站</a>
+        <a style="text-align: right">     <--工具粉,点他!</a>
+        <a href="gg.html">广告页</a>
+    </div>
+<script type="text/javascript">
+
+$(function(){
+	$("#sp").trigger("click");
+
+});
+</script>
+
+        <a href="#volet"  aria-hidden="true" class="ouvrir" id="link" onclick="show()"><img style="width: 45px;height: 45px;" src="/is/叉.png" id="sp"></a>
+        <a href="#volet_clos" aria-hidden="true" class="fermer" onclick="hide()" id="divid"><img style="width: 50px;height: 30px;" src="is/三杠.png"></a>
+    </div>
+</div>
+
+</body>
+</html>
