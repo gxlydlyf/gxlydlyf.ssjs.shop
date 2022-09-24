@@ -1,62 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div{
-            position: absolute;
-            border-radius: 50%;
-            animation:move 2s linear infinite ;
-        }
-        @keyframes move {
-            0%{
-                /* 点击后执行动画 从小0--->200 */
-                width: 0;
-                height: 0;
-                /* 透明度  逐渐同名 */
-                opacity: 1;
-                /* 内部阴影变大 */
-                box-shadow: 0 0 10px inset red;
-                /* div 进行颜色的变化 */
-            }
-            100%{
-                width: 200px;
-                height: 200px;
-                opacity: 0.1;
-                box-shadow: 0 0 60px inset red;
-            }
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>
+    点击小图切换大图
+  </title>
+
 </head>
 <body>
-
-    <script>
-        var docu=document.documentElement;
-var mes=document.querySelector("body");
-docu.onclick=function(event){
-    //获得鼠标点击的位置
-    //点击的水平方向
-    var X=event.clientX
-    //点击的垂直方向
-    var Y=event.clientY
-
-    console.log(X,Y);
-    //创建一个元素div
-    var pao=document.createElement("div")
-    //设置div 位置就是鼠标点击的位置
-    pao.style.top=Y+"px"
-    pao.style.left=X+"px"
-    //把div 添加到页面上body
-    mes.appendChild(pao)
-    //动画执行完后 就删除
-    setTimeout(()=>{
-        mes.removeChild(pao)
-    },2000)
-}
-
-    </script>
+<SCRIPT LANGUAGE="JavaScript">
+    function reP(){
+    document.getElementById('oImg').style.display = "block";
+    }
+    </SCRIPT>
+    <img src='is/yc1.png' id="oImg" style='display:none' width="160px" hight="200px">
+    <INPUT TYPE="button" value='显示图片' onclick="reP()">
 </body>
+
 </html>
