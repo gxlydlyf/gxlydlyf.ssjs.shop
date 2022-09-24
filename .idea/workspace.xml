@@ -113,7 +113,7 @@
       <workItem from="1663585398512" duration="7349000" />
       <workItem from="1663667977513" duration="9011000" />
       <workItem from="1663938753923" duration="6915000" />
-      <workItem from="1663985620981" duration="6604000" />
+      <workItem from="1663985620981" duration="6942000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -290,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663991846441</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="在pycharm上的更新">
+      <created>1663992443657</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663992443657</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
