@@ -82,8 +82,29 @@
     </div>
     <div id="fhd"><a style="text-decoration: none;" href="index.html"><h1 id="fh">返回</h1></a></div>
     <h1 style="text-align:center;font-size: 90px">实用功能</h1>
-<div style="background: aqua;width: 90%;margin: auto;border-radius: 50px;text-align: center">
-<h1>1.用图片隐藏文件</h1>
+<script>
+    function syc(){
+        var showw = document.querySelector('.yc');
+        var show = document.querySelector('.ycb');
+        showw.style.display = 'block';
+        show.style.display = 'none';
+    }
+    function hyc(){
+        var hidee = document.querySelector('.yc');
+        hidee.style.display = 'none';
+        var show = document.querySelector('.ycb');
+        show.style.display = 'block';
+    }
+</script>
+<div style="background: aqua;width: 90%;margin: auto;text-align: center;border-radius: 50px" class="ycb">
+<p> &nbsp;</p>
+    <h1>1.用图片隐藏文件</h1>
+    <div style="width: 100%;background-color: #cacac5;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px" onclick="syc()"><h2>展开</h2><img src="is/zk.png"></div>
+</div>
+<div style="background: aqua;width: 90%;margin: auto;border-radius: 50px;text-align: center;display: none" class="yc">
+<p> &nbsp;</p>
+    <h1>1.用图片隐藏文件</h1>
+    <div style="width: 100%;background-color: #cacac5;" onclick="hyc()"><h2>收起</h2><img src="is/sq.png"></div>
     <p> &nbsp;</p>
     <h1>适用性：</h1>
     <h2>适合Windows， Linux操作系统，安卓手机(安卓手机需要Linux环境)。</h2>
@@ -157,7 +178,7 @@
     <iframe width="90%" height="500px" src='https://player.youku.com/embed/XNTkwNjE5MTU3Mg==' frameborder=0 'allowfullscreen'></iframe>
     <h3>西瓜线路:可全屏</h3>
     <iframe width="90%" height="405" frameborder="0" src="https://www.ixigua.com/iframe/7146878832094478878?autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>
-    <p> &nbsp;</p>
+    <div style="width: 100%;background-color: #cacac5;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px" onclick="hyc()"><h2>收起</h2><img src="is/sq.png"></div>
 </div>
 </body>
 </html>
