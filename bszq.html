@@ -25,30 +25,75 @@
     </style>
 </head>
 <body>
-<script type="text/javascript">
-        window.onload = function () {
-       var Lis = document.getElementsByTagName("li");
-            for (i = 0; i < Lis.length; i++) {
-                Lis[i].i = i;
+<script>
+    window.onload=function(){
+    document.onmousedown=function(ev){
+        var oEvent=ev||event;
+		var ooDiv=document.createElement('div');
+        ooDiv.style.left=oEvent.clientX-10000+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        ooDiv.style.top=oEvent.clientY-10000+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        ooDiv.style.border='1px solid white'; // 设置边框
+        ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        ooDiv.style.width='2px'; // 指定宽度
+        ooDiv.style.height='2px'; // 指定高度
+		ooDiv.style.opacity = '1'
+		ooDiv.style.borderRadius = '50%';
+		ooDiv.style.background = 'white';
+		ooDiv.style.zIndex = '1001';
+        document.body.appendChild(ooDiv);
 
-               //设置鼠标移入时的样式。
-                Lis[i].onmouseover = function () {
-                    this.className = "lihover";
-					var h0=(this.i-1)*30+35;
-					var y=this.getElementsByTagName("div")[0].offsetHeight;
-					var h=this.getElementsByTagName("div")[0].style.top+y;
-					if(h<h0){
-						this.getElementsByTagName("div")[0].style.top=h0+"px";
-						}
-                }
-                  //设置鼠标移开时的样式为空。
-                Lis[i].onmouseout = function () {
-                    this.className = "";
-                }
+        var oDiv=document.createElement('div');
+        oDiv.style.left=oEvent.clientX-10000+'px';  // 指定创建的DIV在文档中距离左侧的位置
+        oDiv.style.top=oEvent.clientY-10000+'px';  // 指定创建的DIV在文档中距离顶部的位置
+        oDiv.style.border='1px solid #A1A19C'; // 设置边框
+        oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
+        oDiv.style.width='20px'; // 指定宽度
+        oDiv.style.height='20px'; // 指定高度
+		oDiv.style.opacity = '0.3'
+		oDiv.style.borderRadius = '50%';
+		oDiv.style.background = '#A1A19C';
+		ooDiv.style.zIndex = '1000';
+        document.body.appendChild(oDiv);
 
-            }
-        }
-    </script>
+
+        var i = 100;
+		var div2width = 60;
+		var div2height = 60;
+		var divwidth = 50;
+		var divheight = 50;
+		var divtop = oEvent.clientY-10000;
+		var divleft = oEvent.clientX-10000;
+		var div2top = oEvent.clientY-10000;
+		var div2left = oEvent.clientX-10000;
+		setInterval(function (){
+		if (i < 250) {
+            i++;
+			divwidth += 1;
+			divheight += 1;
+			div2width -= 0.3;
+			div2height -= 0.3;
+            if (i < 150){
+			divtop = oEvent.clientY-10000 - divwidth/2;
+			divleft = oEvent.clientX-10000 - divwidth/2;
+			div2top = oEvent.clientY-10000 - div2width/2;
+			div2left = oEvent.clientX-10000 - div2width/2;}else {
+			divtop = oEvent.clientY - divwidth/2;
+			divleft = oEvent.clientX - divwidth/2;
+			div2top = oEvent.clientY - div2width/2;
+			div2left = oEvent.clientX - div2width/2;}
+
+			oDiv.style.left = divleft + "px";
+			oDiv.style.top = divtop + "px";
+			oDiv.style.width = divwidth + "px";
+			oDiv.style.height = divheight + "px";
+
+			ooDiv.style.left = div2left + "px";
+			ooDiv.style.top = div2top + "px";
+			ooDiv.style.width = div2width + "px";
+			ooDiv.style.height = div2height + "px";}else {oDiv.remove();ooDiv.remove()}}
+        )
+	}}
+</script>
     <div style="position: fixed;margin: 0 auto;width: 128px;height: 128px;bottom: 0px;top: 100px;background-attachment: fixed;width: 50px;height: 50px;">
 
         <ul class="main">
@@ -92,7 +137,7 @@
     <h1>官方网站:</h1>
     <p><a class="web" href="http://www.protonbus.com.br/">protonbus.com.br</a></p>
     <p class="indent">由于网站服务器在国外,第一次加载可能会十分慢，所以请自备加速器或耐心等待。</p>
-    <p class="indent">界面不是中文，看不懂？不会下载？使用我翻译的中文下载界面👉🏻</p><a href="pbd.html" class="web">中文下载界面</a>
+    <p class="indent">界面不是中文，看不懂？不会下载？使用我翻译的中文下载界面👉🏻</p><a href="pbd.html" class="web">中文下载界面,支持PBSR和PBSU</a>
     <h1>模组官网:</h1>
     <a class="web" href="https://busmods.com">busmods.com</a>
     <p class="indent">大量mod可供下载，使游戏更加精彩！</p>
