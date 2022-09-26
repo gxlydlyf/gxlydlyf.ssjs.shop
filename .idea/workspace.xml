@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d34afb-64a1-4f8b-85ce-8c9c8312257c" name="变更" comment="在pycharm上的更新">
+      <change afterPath="$PROJECT_DIR$/1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dxhz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cs2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sygn.html" beforeDir="false" afterPath="$PROJECT_DIR$/sygn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +121,8 @@
       <workItem from="1663667977513" duration="9011000" />
       <workItem from="1663938753923" duration="6915000" />
       <workItem from="1663985620981" duration="7371000" />
-      <workItem from="1664004702769" duration="22190000" />
+      <workItem from="1664004702769" duration="23333000" />
+      <workItem from="1664170799769" duration="5664000" />
     </task>
     <task id="LOCAL-00001" summary="n'n'nxideiy">
       <created>1662862643083</created>
@@ -385,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664071685009</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="在pycharm上的更新">
+      <created>1664074350124</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1664074350125</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

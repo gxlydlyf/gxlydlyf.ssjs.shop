@@ -27,9 +27,32 @@
         .isb{height: 150px}
         .isb:hover{height: 350px}
         p{font-weight: bold}
+        .zgyw{display: none;background-color: #cacac5;border-radius: 30px;height: 70px;line-height: 70px;opacity: 0.8}
+            .zgyw a{color: red;text-decoration: none;}
+            .zgyw:hover a{color: #e60000}
+       .bjyy:hover .zgyw{display: block}
     </style>
 </head>
 <body>
+  <div style="position: fixed;" class="bjyy">
+        <span onclick="bgaudio()" id="bfsy" style="font-size: 70px">🔇</span>
+      <p class="zgyw">        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“祖国有我”背景音乐 &nbsp;<a href="https://zgsxd.k618.cn/ypzp/202111/t20211101_18215607.html">官网</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <audio src="is/祖国有我.wav" id="bgaudio"></audio>
+    </div>
+<script>
+    var bgaudiocount = 0;
+        function bgaudio(){
+            ++bgaudiocount;
+            if(bgaudiocount % 2 == 1){
+                document.getElementById("bgaudio").play();
+                document.getElementById("bfsy").innerHTML = "🔈";
+            }else{
+                document.getElementById("bgaudio").pause();
+                document.getElementById("bfsy").innerHTML = "🔇";
+            }
+
+        }
+</script>
 <script>
     window.onload=function(){
     document.onmousedown=function(ev){
@@ -223,7 +246,7 @@
 
 <p> &nbsp;</p>
     <h1>2.短信轰炸</h1>
-    <iframe width="95%" height="1700px" src="README.md"></iframe>
+    <iframe width="95%" height="1700px" src="dxhz.html"></iframe>
     <a href="https://github.com/gxlydlyf/SMSBoom-Graphical"><h2>具体内容跳转Github网站</h2></a>
     <div style="width: 100%;background-color: #cacac5;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px" onclick="hhz()"><h2>收起</h2><img src="is/sq.png"></div>
 </div>
