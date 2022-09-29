@@ -18,8 +18,8 @@
                 background-size: cover;
             background-color: white;
         }
-        #fh{color: white;text-align: left;text-decoration: none}
-        #fhd{width: 70px;background-color: aqua;}
+        #fh{color: white;text-align: left;text-decoration: none;transition-timing-function: ease;transition-duration: 0.1s;}
+        #fhd{width: 70px;background-color: aqua;transition-timing-function: ease;transition-duration: 0.1s;border-radius: 10px}
         #fhd:hover{font-size: 25px;width:110px;background-color: #80d6ff;color: black}
         #fh:hover{color: black}
         .web{text-decoration: none;color: blue;font-weight: bold}
@@ -27,10 +27,11 @@
         .isb{height: 150px}
         .isb:hover{height: 350px}
         p{font-weight: bold}
-        .zgyw{display: none;background-color: #cacac5;border-radius: 30px;height: 70px;line-height: 70px;opacity: 0.8}
+        .zgyw{display: none;background-color: #cacac5;border-radius: 30px;height: 70px;line-height: 70px;opacity: 0.8;}
             .zgyw a{color: red;text-decoration: none;}
             .zgyw:hover a{color: #e60000}
        .bjyy:hover .zgyw{display: block}
+       .bjyy{top: 15%}
     </style>
 </head>
 <body>
@@ -52,75 +53,6 @@
             }
 
         }
-</script>
-<script>
-    window.onload=function(){
-    document.onmousedown=function(ev){
-        var oEvent=ev||event;
-		var ooDiv=document.createElement('div');
-        ooDiv.style.left=oEvent.clientX-10000+'px';  // 指定创建的DIV在文档中距离左侧的位置
-        ooDiv.style.top=oEvent.clientY-10000+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        ooDiv.style.border='1px solid white'; // 设置边框
-        ooDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
-        ooDiv.style.width='2px'; // 指定宽度
-        ooDiv.style.height='2px'; // 指定高度
-		ooDiv.style.opacity = '1'
-		ooDiv.style.borderRadius = '50%';
-		ooDiv.style.background = 'white';
-		ooDiv.style.zIndex = '1001';
-        document.body.appendChild(ooDiv);
-
-        var oDiv=document.createElement('div');
-        oDiv.style.left=oEvent.clientX-10000+'px';  // 指定创建的DIV在文档中距离左侧的位置
-        oDiv.style.top=oEvent.clientY-10000+'px';  // 指定创建的DIV在文档中距离顶部的位置
-        oDiv.style.border='1px solid #A1A19C'; // 设置边框
-        oDiv.style.position='absolute'; // 为新创建的DIV指定绝对定位
-        oDiv.style.width='20px'; // 指定宽度
-        oDiv.style.height='20px'; // 指定高度
-		oDiv.style.opacity = '0.3'
-		oDiv.style.borderRadius = '50%';
-		oDiv.style.background = '#A1A19C';
-		ooDiv.style.zIndex = '1000';
-        document.body.appendChild(oDiv);
-
-
-        var i = 100;
-		var div2width = 60;
-		var div2height = 60;
-		var divwidth = 50;
-		var divheight = 50;
-		var divtop = oEvent.clientY-10000;
-		var divleft = oEvent.clientX-10000;
-		var div2top = oEvent.clientY-10000;
-		var div2left = oEvent.clientX-10000;
-		setInterval(function (){
-		if (i < 250) {
-            i++;
-			divwidth += 1;
-			divheight += 1;
-			div2width -= 0.3;
-			div2height -= 0.3;
-            if (i < 150){
-			divtop = oEvent.clientY-10000 - divwidth/2;
-			divleft = oEvent.clientX-10000 - divwidth/2;
-			div2top = oEvent.clientY-10000 - div2width/2;
-			div2left = oEvent.clientX-10000 - div2width/2;}else {
-			divtop = oEvent.clientY - divwidth/2;
-			divleft = oEvent.clientX - divwidth/2;
-			div2top = oEvent.clientY - div2width/2;
-			div2left = oEvent.clientX - div2width/2;}
-
-			oDiv.style.left = divleft + "px";
-			oDiv.style.top = divtop + "px";
-			oDiv.style.width = divwidth + "px";
-			oDiv.style.height = divheight + "px";
-
-			ooDiv.style.left = div2left + "px";
-			ooDiv.style.top = div2top + "px";
-			ooDiv.style.width = div2width + "px";
-			ooDiv.style.height = div2height + "px";}else {oDiv.remove();ooDiv.remove()}}
-        )
-	}}
 </script>
     <div id="fhd"><a style="text-decoration: none;" href="index.html"><h1 id="fh">返回</h1></a></div>
     <h1 style="text-align:center;font-size: 90px">实用功能</h1>

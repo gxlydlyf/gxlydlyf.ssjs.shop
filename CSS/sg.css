@@ -24,7 +24,7 @@ background-color: #cacac5;
         #volet_clos {position: fixed;top: 0px; left: -200px;width: 100%;z-index: 82}
         #volet {width: 250px;padding: 10px;background: none; color: #fff;width: 100%;}
         /* 初始定位 */
-        #volet {position: absolute;left: 0px;top: 40px;transition: all .5s ease-in;}
+        #volet {position: absolute;left: 0px;top: 40px;transition: all .4s ease-in;}
         #volet a.ouvrir,#volet a.fermer {position: absolute;right: -88px;top: 150px;}
         /* 点击过后改变 target  */
         #volet a.fermer {display: none;}
